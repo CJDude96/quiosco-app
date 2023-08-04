@@ -80,6 +80,32 @@ const QuiscoProvider = ({ children }) => {
 
   const sendOrder = async (e) => {
     e.preventDefault();
+
+    try {
+      await axios.post("/api/orders", {
+        order,
+        name,
+        total,
+        date: Date.now().toString(),
+      });
+
+      // Reset App
+      setActualCat(categories[0]);
+      setOrder([]);
+      setName("");
+      setTotal(0);
+
+      // Toast success order
+      toast.success("¡Orden realizada!");
+
+      //Redirect to index
+      setTimeout(() => {
+        router.push("/");
+      }, 2000);
+    } catch (error) {
+      console.log(error);
+      toast.error("¡Ups! hubo un error al realizar la orden");
+    }
   };
 
   return (
