@@ -19,7 +19,7 @@ const Category = ({ category }) => {
         height={70}
         src={`/assets/img/icono_${icon}.svg`}
         alt={`Icon ${name}`}
-        style={{ width: '70px', height: '70px' }}
+        style={{ width: "70px", height: "70px" }}
       />
       {name}
     </button>

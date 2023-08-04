@@ -3,8 +3,7 @@ import useQuiosco from "../hooks/useQuiosco";
 import Category from "./Category";
 
 const Sidebar = () => {
-
-  const { categories } = useQuiosco()
+  const { categories } = useQuiosco();
 
   return (
     <>
@@ -17,13 +16,10 @@ const Sidebar = () => {
         className="w-9/12 m-auto"
       />
       <nav className="mt-10">
-        {
-          categories.map( category => (
-            <Category key={category.id} category={category} />
-          ))
-        }
+        {categories.map((category) => (
+          <Category key={category.id} category={category} />
+        ))}
       </nav>
-      
     </>
   );
 };

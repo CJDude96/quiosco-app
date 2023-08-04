@@ -31,10 +31,11 @@ const QuiscoProvider = ({ children }) => {
 
   useEffect(() => {
     const newTotal = order.reduce(
-      (total, product) => (product.price * product.amount) + total, 0
+      (total, product) => product.price * product.amount + total,
+      0
     );
 
-    setTotal(newTotal)
+    setTotal(newTotal);
   }, [order]);
 
   const handleClickCategory = (id) => {
@@ -79,8 +80,6 @@ const QuiscoProvider = ({ children }) => {
 
   const sendOrder = async (e) => {
     e.preventDefault();
-
-    
   };
 
   return (
@@ -100,7 +99,7 @@ const QuiscoProvider = ({ children }) => {
         name,
         setName,
         sendOrder,
-        total
+        total,
       }}
     >
       {children}

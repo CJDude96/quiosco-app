@@ -14,7 +14,7 @@ const Product = ({ product }) => {
         alt={`Product ${name}`}
         width={300}
         height={400}
-        style={{margin: "auto"}}
+        style={{ margin: "auto" }}
       />
       <div className="p-5">
         <h3 className="text-2xl font-bold">{name}</h3>

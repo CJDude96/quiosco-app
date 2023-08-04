@@ -3,8 +3,7 @@ import { moneyFormat } from "../helpers";
 import useQuiosco from "../hooks/useQuiosco";
 
 const ProductResume = ({ product }) => {
-
-  const { handleEditOrder, handleDeleteOrder } = useQuiosco()
+  const { handleEditOrder, handleDeleteOrder } = useQuiosco();
 
   return (
     <div
@@ -58,7 +57,6 @@ const ProductResume = ({ product }) => {
             />
           </svg>
         </button>
-
 
         <button
           type="button"

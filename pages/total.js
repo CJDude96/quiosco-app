@@ -7,9 +7,8 @@ export default function Total() {
   const { order, name, setName, sendOrder, total } = useQuiosco();
 
   const validateOrder = useCallback(() => {
-    return order.length === 0 || name === '' || name.length < 3;
+    return order.length === 0 || name === "" || name.length < 3;
   }, [order, name]);
-
 
   useEffect(() => {
     validateOrder;
@@ -38,7 +37,8 @@ export default function Total() {
 
         <div className="mt-10">
           <p className="text-2xl">
-            Total a pagar: <span className="font-bold">{moneyFormat(total)}</span>
+            Total a pagar:{" "}
+            <span className="font-bold">{moneyFormat(total)}</span>
           </p>
         </div>
 
