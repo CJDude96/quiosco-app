@@ -7,7 +7,7 @@ const ProductResume = ({ product }) => {
 
   return (
     <div
-      className="shadow p-5 mb-4 flex gap-10 
+      className="shadow p-5 mb-5 flex gap-10 
     items-center justify-between 
     bg-amber-100 rounded-md"
     >

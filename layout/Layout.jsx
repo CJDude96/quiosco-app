@@ -24,7 +24,7 @@ export default function Layout({ children, page = "default" }) {
   return (
     <>
       <Head>
-        <title>Cafe - {page} </title>
+        <title>Cafe </title>
         <meta name="description" content="Quiosco Cafeteria" />
       </Head>
 

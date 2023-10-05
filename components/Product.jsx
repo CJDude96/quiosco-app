@@ -14,9 +14,8 @@ const Product = ({ product }) => {
         alt={`Product ${name}`}
         width={300}
         height={400}
-        style={{ margin: "auto" }}
       />
-      <div className="p-5">
+      <div className="p-5 w-full">
         <h3 className="text-2xl font-bold">{name}</h3>
         <p className="mt-5 font-black text-4xl text-amber-500">
           {moneyFormat(price)}

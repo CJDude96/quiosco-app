@@ -4,6 +4,7 @@ import Product from "../components/Product";
 
 export default function Home() {
   const { actualCat } = useQuiosco();
+
   return (
     <Layout page={`Menu`}>
       <h1 className="text-4xl font-bold">{actualCat?.name}</h1>
